@@ -1,0 +1,6 @@
+c:\users\robeoliv\documents\visual studio 2013\Projects\BeginningCS\BeginningCS\bin\Debug\BeginningCS.exe.config
+c:\users\robeoliv\documents\visual studio 2013\Projects\BeginningCS\BeginningCS\bin\Debug\BeginningCS.exe
+c:\users\robeoliv\documents\visual studio 2013\Projects\BeginningCS\BeginningCS\bin\Debug\BeginningCS.pdb
+c:\users\robeoliv\documents\visual studio 2013\Projects\BeginningCS\BeginningCS\obj\Debug\BeginningCS.csprojResolveAssemblyReference.cache
+c:\users\robeoliv\documents\visual studio 2013\Projects\BeginningCS\BeginningCS\obj\Debug\BeginningCS.exe
+c:\users\robeoliv\documents\visual studio 2013\Projects\BeginningCS\BeginningCS\obj\Debug\BeginningCS.pdb
