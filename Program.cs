@@ -12,13 +12,17 @@ namespace BeginningCS
     {
         static void Main(string[] args)
         {
-            long n = 50;
-            string computation = "BeginningCS.Fibonacci";
-            var methodEnumerable = RetrieveMethods(computation);
+            long n = 10;
+            string computation = "BeginningCS.Factorial";
+            
+            char[] delimiters = { '.' };
+            string algorithm = computation.Split(delimiters)[1];
 
+            var methodEnumerable = RetrieveMethods(computation);
+    
             foreach (MethodInfo methodInfo in methodEnumerable)
             {
-                run(methodInfo, n);
+                run(methodInfo, n, algorithm);
             }
 
         }
@@ -32,19 +36,18 @@ namespace BeginningCS
             return methodEnumarable;
         }
 
-        static void run(MethodInfo methodInfo, long n)
+        static void run(MethodInfo methodInfo, long n, string algorithm="")
         {
             Func<long, long>  method = (Func<long, long>)Delegate.
                 CreateDelegate(typeof(Func<long, long>), methodInfo);
                 
-            string output_format = "Fibonacci of " + n + " is {0} ({1})";
+            string output_format = "{0} of {1} is {2} ({3}): Took {4}ms";
             
             Stopwatch watch = Stopwatch.StartNew();
             
             long result = method(n); watch.Stop();
 
-            string text = String.Format(output_format, result, methodInfo.Name);
-            Console.WriteLine(text + ": Took " + watch.ElapsedMilliseconds + "ms");
+            Console.WriteLine(output_format, algorithm, n, result, methodInfo.Name, watch.ElapsedMilliseconds);
         }
     }
 }
