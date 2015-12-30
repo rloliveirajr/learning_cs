@@ -2,7 +2,7 @@
 
 namespace BeginningCS
 {
-    class Fibonacci
+    public static class Fibonacci
     {
         public static long Recursive(long n)
         {
@@ -11,18 +11,19 @@ namespace BeginningCS
                 return n;
             }
             
-            return Fibonacci.Recursive(n - 1) + Fibonacci.Recursive(n - 2);
+            return Recursive(n - 1) + Recursive(n - 2);
         }
 
         public static long RecursiveTernary(long n)
         {
-            return n < 2 ? n : Fibonacci.RecursiveTernary(n - 1) + Fibonacci.RecursiveTernary(n - 2);
+            return n < 2 ? n : RecursiveTernary(n - 1) + RecursiveTernary(n - 2);
         }
 
         public static long TailRecursive(long n)
         {
-            return Fibonacci.TailRecursive(n, 0, 1);
+            return TailRecursive(n, 0, 1);
         }
+
         private static long TailRecursive(long n, long a, long b)
         {
             if(n < 1)
@@ -30,7 +31,7 @@ namespace BeginningCS
                 return a;
             }
 
-            return Fibonacci.TailRecursive(n - 1, a + b, a);
+            return TailRecursive(n - 1, a + b, a);
         }
 
         public static long BinetsFormula(long n)

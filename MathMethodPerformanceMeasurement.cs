@@ -8,12 +8,12 @@ using System.Reflection;
 
 namespace BeginningCS
 {
-    class Program
+    class MathMethodPerformanceMeasurement
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             long n = 10;
-            string computation = "BeginningCS.Factorial";
+            string computation = "BeginningCS.Fibonacci";
             
             char[] delimiters = { '.' };
             string algorithm = computation.Split(delimiters)[1];
@@ -22,28 +22,28 @@ namespace BeginningCS
     
             foreach (MethodInfo methodInfo in methodEnumerable)
             {
-                run(methodInfo, n, algorithm);
+                ExecuteAndMeasureMethod(methodInfo, n, algorithm);
             }
 
         }
 
         private static IEnumerable<MethodInfo> RetrieveMethods(string computation)
         {
-            Type a = Type.GetType(computation);
+            var a = Type.GetType(computation);
             MethodInfo[] methods = a.GetMethods(BindingFlags.Public | BindingFlags.Static);
             IEnumerable<MethodInfo> methodEnumarable = methods.OrderBy(method => method.Name);
             
             return methodEnumarable;
         }
 
-        static void run(MethodInfo methodInfo, long n, string algorithm="")
+        private static void ExecuteAndMeasureMethod(MethodInfo methodInfo, long n, string algorithm="")
         {
             Func<long, long>  method = (Func<long, long>)Delegate.
                 CreateDelegate(typeof(Func<long, long>), methodInfo);
                 
             string output_format = "{0} of {1} is {2} ({3}): Took {4}ms";
             
-            Stopwatch watch = Stopwatch.StartNew();
+            var watch = Stopwatch.StartNew();
             
             long result = method(n); watch.Stop();
 

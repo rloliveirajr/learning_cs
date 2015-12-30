@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeginningCS
 {
-    class Factorial
+    public static class Factorial
     {
         public static long Iterative(long n)
         {
@@ -31,7 +31,7 @@ namespace BeginningCS
                 return 1;
             }
 
-            return Factorial.Recursive(n - 1) * n;
+            return Recursive(n - 1) * n;
         }
     }
 }
