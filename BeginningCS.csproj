@@ -51,6 +51,7 @@
     <Compile Include="Sorting\MergeSort.cs" />
     <Compile Include="Sorting\MergeBottomUp.cs" />
     <Compile Include="Sorting\MergeTopDown.cs" />
+    <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="Sorting\Selection.cs" />
     <Compile Include="Sorting\SortUtils.cs" />
     <Compile Include="Sorting\SortMethods.cs">
