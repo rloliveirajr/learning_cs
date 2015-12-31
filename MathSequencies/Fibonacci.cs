@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BeginningCS
+namespace BeginningCS.MathSequencies
 {
     public static class Fibonacci
     {

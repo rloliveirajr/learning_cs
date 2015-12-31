@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace BeginningCS
+namespace BeginningCS.MathSequencies
 {
-    class MathMethodPerformanceMeasurement
+    class MathSequenciesMethods
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
             long n = 10;
-            string computation = "BeginningCS.Fibonacci";
+            string computation = "BeginningCS.MathSequencies.Fibonacci";
             
             char[] delimiters = { '.' };
-            string algorithm = computation.Split(delimiters)[1];
+            string algorithm = computation.Split(delimiters)[2];
 
             var methodEnumerable = RetrieveMethods(computation);
     

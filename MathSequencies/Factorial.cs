@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BeginningCS
+namespace BeginningCS.MathSequencies
 {
     public static class Factorial
     {

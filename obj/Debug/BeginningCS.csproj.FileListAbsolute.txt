@@ -9,5 +9,4 @@ C:\Users\robeoliv\Documents\Visual Studio 2013\Projects\BeginningCS\learning_cs\
 C:\Users\robeoliv\Documents\Visual Studio 2013\Projects\BeginningCS\learning_cs\obj\Debug\BeginningCS.pdb
 C:\Users\robeoliv\Documents\Visual Studio 2013\Projects\BeginningCS\learning_cs\bin\Debug\BeginningCS.exe
 C:\Users\robeoliv\Documents\Visual Studio 2013\Projects\BeginningCS\learning_cs\bin\Debug\BeginningCS.pdb
-C:\Users\robeoliv\Documents\Visual Studio 2013\Projects\BeginningCS\learning_cs\bin\Debug\BeginningCS.exe.CodeAnalysisLog.xml
-C:\Users\robeoliv\Documents\Visual Studio 2013\Projects\BeginningCS\learning_cs\bin\Debug\BeginningCS.exe.lastcodeanalysissucceeded
+C:\Users\robeoliv\Documents\Visual Studio 2013\Projects\BeginningCS\learning_cs\obj\Debug\BeginningCS.csprojResolveAssemblyReference.cache
